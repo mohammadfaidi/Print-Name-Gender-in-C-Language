@@ -1,0 +1,60 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+void getWelMsg(char str[],char gender)
+{
+    if( gender == 'm' || gender == 'M') {
+        
+        printf("welcome MR %s.", str );
+   printf("he is  a male %c.", gender );
+    }else{
+        
+              printf("welcome Miss %s.", str );
+   printf("she is  a female %c.", gender );
+    }
+   
+}
+
+int main()
+{
+      char gender;
+      
+    char name[20];
+    //printf("Enter name: ");
+    //
+    
+     
+    printf("Enter gender (M/m or F/f): ");
+    scanf("%c",&gender);
+     
+    switch(gender)
+    {
+        case 'M':
+        case 'm':
+        printf("Enter name: ");
+        scanf("%s", name);
+            getWelMsg(name,gender);
+            break;
+        case 'F':
+        case 'f':
+        printf("Enter name: ");
+            scanf("%s", name);
+            getWelMsg(name,gender);
+            break;
+        default:
+            printf("Unspecified Gender.");
+    }
+    printf("\n");
+    
+
+
+      
+    return 0;
+}

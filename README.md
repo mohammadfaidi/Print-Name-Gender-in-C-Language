@@ -20,3 +20,5 @@ Examples
 if the user’s name is “Ahmad” and his gender is Male, the welMsg will be  “Welcome Mr. Ahmad” exactly. 
 
 if the user’s name is “Fatima” and his gender is Female, the welMsg will be  “Welcome Miss. Fatima” exactly.
+
+https://www.programiz.com/c-programming/c-strings
